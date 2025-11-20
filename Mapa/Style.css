@@ -1,0 +1,114 @@
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  background: rgba(20, 33, 61, 0.95); /* COLOR ORIGINAL */
+  color: #fff;
+  height: 100%;
+  position: fixed;
+  left: -260px;
+  top: 0;
+  padding: 20px;
+  transition: 0.3s ease;
+  box-shadow: 3px 0 8px rgba(0,0,0,0.3);
+  z-index: 999;
+}
+.sidebar.open {
+  left: 0;
+}
+.sidebar h2 {
+  color: #fca311; 
+  text-align: center;
+  margin-bottom: 20px;
+}
+.sidebar a {
+  display: block;
+  padding: 12px;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+.sidebar a:hover {
+  background: rgba(252, 163, 17, 0.3); 
+}
+
+/* Boton Menu*/
+#menu-btn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  font-size: 28px;
+  padding: 8px 14px;
+  background: rgba(20,33,61,0.9);
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: 0.3s;
+}
+#menu-btn:hover {
+  background: #fca311;
+}
+
+
+/* Buscador */
+#search-bar {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  background: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.952);
+  z-index: 900;
+}
+
+#search-input {
+  border: none;
+  outline: none;
+  padding: 8px 10px;
+  width: 240px;
+  font-size: 15px;
+}
+#search-btn {
+  background: #14213d;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#search-btn:hover {
+  background: #fca311;
+}
+
+
+/* Botón centrar ubicación */
+#center-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  cursor: pointer;
+  z-index: 900;
+  font-size: 20px;
+  transition: 0.2s;
+}
+
+#center-btn:hover {
+  background: #fca311;
+}
+
+/* Mapa full-screen           */
+#map {
+  height: 100vh;
+  width: 100%;
+}
